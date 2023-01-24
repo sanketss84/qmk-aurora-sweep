@@ -1,0 +1,101 @@
+{
+    "keyboard": "splitkb/aurora/sweep/rev1",
+    "keymap": "default",
+    "version": 1,
+    "layout": "LAYOUT",
+    "layers": [
+        // seniply starts here -------------------------------
+        // layer 0
+        // base : colemak-dh and layer mod taps
+        // qwfpb jluy' 
+        // asrtg mneio
+        // zxcdv kh ,./
+        // ext lshift space sym
+        [
+            "KC_Q","KC_W","KC_F","KC_P","KC_B",    "KC_J","KC_L","KC_U","KC_Y","KC_QUOT",
+            "KC_A","KC_S","KC_R","KC_T","KC_G",    "KC_M","KC_N","KC_E","KC_I","KC_O",
+            "KC_Z","KC_X","KC_C","KC_D","KC_V",    "KC_K","KC_H","KC_COMM","KC_DOT","KC_SLSH",
+            "LT(1,KC_TAB)","KC_LSFT",    "KC_SPC","LT(3,KC_ENT)"
+        ],
+        // layer 1 extend | thumb position X- --
+        // esc Bk Fnd Fw ins       pgup home up end capslock
+        // oneshot(alt super shift ctrl) altgr       pgdwn left down right del
+        // undo cut copy super paste       prtscr bkspc tab menu enter
+        // N/A -- enter -- 
+        [
+            "KC_ESC","LCTL(KC_LEFT)","LCTL(KC_F)","LCTL(KC_RGHT)","KC_INS",                     "KC_PGUP","KC_HOME","KC_UP","KC_END","KC_CAPS",
+            "OSM(MOD_LALT)","OSM(MOD_LGUI)","OSM(MOD_LSFT)","OSM(MOD_LCTL)","OSM(MOD_RALT)",    "KC_PGDN","KC_LEFT","KC_DOWN","KC_RGHT","KC_DEL",
+            "LCTL(KC_Z)","LCTL(KC_X)","LCTL(KC_C)","KC_LGUI","LCTL(KC_V)",                         "KC_PSCR","KC_BSPC","KC_TAB","KC_APP","KC_ENT",
+            "KC_TRNS","KC_TRNS",    "KC_ENT","MO(2)"
+        ],
+        // layer 2 function | thumb position X- -X
+        // stop prev play next bri+    f12 f7 f8 f9 ctrl+
+        // alt super shift ctrl bri-    f11 f4 f5 f6 ctrl-
+        // mute vol- ctrlshiftc vol+ ctrlshiftv    f10 f1 f2 f3 ctrl0
+        // N/A -- enter N/A
+        [
+            "KC_MSTP","KC_MPRV","KC_MPLY","KC_MNXT","BL_INC",                            "KC_F12","KC_F7","KC_F8","KC_F9","LCTL(KC_PLUS)",
+            "OSM(MOD_LALT)","OSM(MOD_LGUI)","OSM(MOD_LSFT)","OSM(MOD_LCTL)","BL_DEC",    "KC_F11","KC_F4","KC_F5","KC_F6","LCTL(KC_MINS)",
+            "KC_MUTE","KC_VOLD","LCTL(LSFT(KC_C))","KC_VOLU","LCTL(LSFT(KC_V))",         "KC_F10","KC_F1","KC_F2","KC_F3","LCTL(KC_0)",
+            "KC_TRNS","KC_TRNS","KC_ENT","KC_TRNS"
+        ],
+        // layer 3 symbols | thumb position -- -X
+        // !@#$% =789+
+        // :{([  *456-
+        // &})]  0123/
+        // -- -- -- N/A
+        [
+            "KC_EXLM","KC_AT","KC_HASH","KC_DLR","KC_PERC",     "KC_EQL","KC_7","KC_8","KC_9","KC_PLUS",
+            "KC_SCLN","KC_COLN","KC_LCBR","KC_LPRN","KC_LBRC",  "KC_ASTR","KC_4","KC_5","KC_6","KC_MINS",
+            "KC_CIRC","KC_AMPR","KC_RCBR","KC_RPRN","KC_RBRC",  "KC_0","KC_1","KC_2","KC_3","KC_SLSH",
+            "KC_TRNS","MO(4)","KC_TRNS","KC_TRNS"
+        ],
+        // layer 4 symbols 2 | thumb position -X -X
+        // 1 2 3 euro --    mscrup m1 mup m2  layer1_reserve_qwerty
+        // -- -- \ | --    mscrdn  mleft  mdwn   mright --
+        // backtick tilde cents udrscr --   -- m4  m3 m5 layer2_reserve
+        [
+            "KC_1","KC_2","KC_3","KC_TRNS","KC_TRNS"               "KC_WH_U","KC_BTN1","KC_MS_U","KC_BTN2","KC_TRNS",
+            "KC_TRNS","KC_TRNS","KC_BSLS","KC_PIPE","KC_TRNS",          "KC_WH_D","KC_MS_L","KC_MS_D","KC_MS_R","KC_TRNS",
+            "KC_GRV","KC_TILD","KC_TRNS","KC_UNDS","KC_TRNS",    "KC_TRNS","KC_BTN4","KC_BTN3","KC_BTN5","KC_TRNS",
+            "KC_TRNS","KC_TRNS","KC_TRNS","KC_TRNS"
+        ]
+        //layer5 qwerty
+        // [
+        //     "KC_Q","KC_W","KC_F","KC_P","KC_B",    "KC_J","KC_L","KC_U","KC_Y","KC_QUOT",
+        //     "KC_A","KC_S","KC_R","KC_T","KC_G",    "KC_M","KC_N","KC_E","KC_I","KC_O",
+        //     "KC_Z","KC_X","KC_C","KC_D","KC_V",    "KC_K","KC_H","KC_COMM","KC_DOT","KC_SLSH",
+        //     "LT(1,KC_TAB)","KC_LSFT",    "KC_SPC","LT(3,KC_ENT)"
+        // ]
+        // seniply ends here -------------------------------
+    ],
+    "config": {
+        "features": {
+            "oled": true,
+            "rgb_matrix": true,
+            "rgblight": false
+        },
+        "encoder": {
+            "enabled": true
+        },
+        "rgblight": {
+            "hue_steps": 8,
+            "saturation_steps": 8,
+            "brightness_steps": 8,
+            "sleep": true
+        }
+    },
+    "mouse_key": {
+        "enabled": true,
+        "interval": 16,
+        "time_to_max": 40,
+        "delay": 100,
+        "wheel_delay": 100
+    },
+    "tapping": {
+        "term": 200,
+        "permissive_hold": true,
+        "ignore_mod_tap_interrupt": true,
+        "force_hold": true
+    }
+}
